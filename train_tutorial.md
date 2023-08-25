@@ -7,11 +7,16 @@ conda create --name py36-torch python=3.6
 pip install -r requirements.txt
 ```
 
+Notes: There can be a problem with opencv which gets installed by imgaug. The solution is to install the specified version of opencv first and all the other dependencies required for imgaug before installing imgaug.
+
 ## Required package
 - roi_pool: 
 	- install the package: https://github.com/open-mmlab/mmdetection/blob/master/INSTALL.md
 	- https://github.com/open-mmlab/mmdetection/tree/master/mmdet/ops/roi_pool
 	- put 'roi_pool_cuda.cpython-36m-x86_64-linux-gnu.so' in 'utils/roi_pool/'
+
+Notes: I did not find roi_pool in the mmdetection project. They probably changed it in an update. I will try installing an older version. It still exists in version 1.2
+
 
 ## Required settings
 - check the config file
