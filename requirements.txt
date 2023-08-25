@@ -12,6 +12,13 @@ tensorboardX
 tqdm
 pyyaml
 imageio
+six 
+numpy 
+scipy 
+Pillow 
+matplotlib 
+scikit-image 
+imageio
 imgaug
 jupyter
 scikit-learn
